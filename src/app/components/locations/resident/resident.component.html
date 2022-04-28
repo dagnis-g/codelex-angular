@@ -1,0 +1,11 @@
+<div class="resident-section">
+  <div *ngIf="residentLink" class="resident-container">
+    <p class="resident-name">
+      <b>{{resident.name}}</b>
+    </p>
+    <img alt="resident image" src="{{resident.image}}">
+    <div class="card-actions">
+      <a [routerLink]="['/characters',resident.id]" class="resident-read-more-button">Read More</a>
+    </div>
+  </div>
+</div>

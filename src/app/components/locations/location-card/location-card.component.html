@@ -1,0 +1,14 @@
+<div class="location-card-section">
+  <mat-card *ngIf="location" class="location-card">
+
+    <mat-card-title><b>Name:</b>{{location.name}}</mat-card-title>
+    <mat-card-content>Type: {{location.type}}</mat-card-content>
+    <mat-card-content>Dimension: {{location.dimension}}</mat-card-content>
+
+    <mat-card-actions>
+      <button [routerLink]="['/locations',location.id]">Read More</button>
+    </mat-card-actions>
+
+  </mat-card>
+</div>
+

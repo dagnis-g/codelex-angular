@@ -1,0 +1,86 @@
+<section class="form-signup-section">
+  <div>
+    <h2 class="title">SIGN UP</h2>
+
+    <div>
+
+      <form [formGroup]="signupForm" class="input-container">
+        <!--            class="signup-form" -->
+
+        <div class="form-item">
+          <input
+            [ngClass]="{'input-error': signupForm.controls['name'].touched
+        && signupForm.controls['name'].hasError('required')}"
+            class="form-text-input"
+            formControlName="name"
+            placeholder="NAME"
+            type="text"/>
+          <small
+            *ngIf="signupForm.controls['name'].touched
+          && signupForm.controls['name'].hasError('required')"
+            class="form-error">
+            Name is required
+          </small>
+        </div>
+
+        <div class="form-item">
+          <input
+            [ngClass]="{'input-error': signupForm.controls['email'].touched
+        && signupForm.controls['email'].hasError('required')}"
+            class="form-text-input"
+            formControlName="email"
+            id="email-signup"
+            placeholder="E-MAIL"
+            type="text"
+          />
+          <small
+            *ngIf="signupForm.controls['email'].touched
+          && signupForm.controls['email'].hasError('required')"
+            class="form-error">
+            Email is required
+          </small>
+        </div>
+
+        <input placeholder="PASSWORD" type="password"/>
+
+        <select formControlName="country">
+          <option [value]="''" disabled>SElECT A COUNTRY</option>
+          <option *ngFor="let country of countries"
+                  value="country.countryCode">{{country.title}}</option>
+        </select>
+
+        <label>
+          <input class="gender-checkbox" formControlName="male" type="checkbox">
+          MALE
+        </label>
+
+        <label>
+          <input class="gender-checkbox"
+                 formControlName="female"
+                 type="checkbox">
+          FEMALE
+        </label>
+
+        <label>
+          <input
+            [ngClass]="{'input-error':signupForm.controls['robot'].hasError('requiredTrue')}"
+            class="robot-checkbox"
+            formControlName="robot"
+            type="checkbox">
+          I AM NOT A ROBOT
+        </label>
+        <!--        <small-->
+        <!--          *ngIf="signupForm.controls['robot'].hasError('requiredTrue')"-->
+        <!--        >-->
+        <!--          Field Required-->
+        <!--        </small>-->
+
+        <div class="signup-btn-container">
+          <button (click)="signup()" class="signup-btn" type="button">SUBMIT</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</section>

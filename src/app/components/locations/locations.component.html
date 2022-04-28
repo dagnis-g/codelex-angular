@@ -1,0 +1,11 @@
+<section class="locations-section">
+
+  <h1 class="locations-section-title">Rick And Morty Locations</h1>
+
+  <div *ngIf="locations$ | async as locations" class="locations-container">
+    <div *ngFor="let location of locations" class="location-card-container">
+      <app-location-card [location]="location"></app-location-card>
+    </div>
+  </div>
+
+</section>

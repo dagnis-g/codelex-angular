@@ -1,0 +1,70 @@
+.form-signup-section {
+  margin: 30px auto 30px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 1rem;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-error {
+  color: firebrick;
+}
+
+.gender-checkbox {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.gender-checkbox:checked {
+  border: 1px solid darkblue;
+  background-color: cornflowerblue;
+}
+
+.robot-checkbox {
+  margin-left: 8px;
+}
+
+.signup-btn {
+  width: 100%;
+  background-color: #ffffff;
+  color: #4ca6a6;
+  border: 1px solid #4ca6a6;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darkgray;
+    color: #dddddd;
+  }
+}
+
+

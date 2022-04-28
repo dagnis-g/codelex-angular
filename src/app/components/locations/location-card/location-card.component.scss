@@ -1,0 +1,24 @@
+//.location-card-section {
+//  display: grid;
+//}
+
+
+.location-container {
+  background-color: #97dc5a;
+  border: 4px solid black;
+}
+
+.location-card {
+  max-width: 400px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 20px;
+}
+
+.location-card-section {
+
+}

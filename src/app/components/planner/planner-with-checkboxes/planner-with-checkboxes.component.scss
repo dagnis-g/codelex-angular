@@ -1,0 +1,70 @@
+.planner-section{
+  padding-top: 20px;
+}
+.planner-container {
+  display: flex;
+  justify-content: center;
+}
+
+.planner-title {
+  text-align: center;
+}
+
+.planner {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #97dc5a;
+  width: 500px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.planner-action-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.planner-task-input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 4px;
+  padding: 0 5px;
+  outline: none;
+}
+
+//List
+
+.planner-task{
+  display: flex;
+}
+
+.planner-task-checkbox{
+  width: 20px;
+  height: 20px;
+}
+
+.task-done{
+  text-decoration: line-through
+}
+
+//Button
+
+.planner-btn-add {
+  border: none;
+  padding: 5px 15px;
+  background-color: cornflowerblue;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+
+  &:hover {
+    background-color: rgba(100, 148, 237, 0.63);
+  }
+}
